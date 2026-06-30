@@ -1,1 +1,1 @@
-# solution-architecture-module3
+# solution-architecture
