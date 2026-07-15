@@ -1,0 +1,343 @@
+<mxfile host="Electron" agent="Claude">
+  <diagram id="intermediate-arch-am32" name="Промежуточное решение — контекст">
+    <mxGraphModel dx="1677" dy="1118" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1060" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="band_biz" parent="1" style="rounded=0;html=1;fillColor=#FFF8E1;strokeColor=#E0C060;dashed=0;verticalAlign=top;opacity=70;" value="" vertex="1">
+          <mxGeometry height="305" width="1670" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="band_app" parent="1" style="rounded=0;html=1;fillColor=#E3F5F7;strokeColor=#66AABB;dashed=0;verticalAlign=top;opacity=70;" value="" vertex="1">
+          <mxGeometry height="649" width="1669" x="30" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontStyle=1;spacingLeft=4;" value="Концептуальная архитектура промежуточного решения (Фаза 1) «Diamond Universe»" vertex="1">
+          <mxGeometry height="24" width="1300" x="32" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bp1" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fillColor=#ffff99;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;" value="&lt;b&gt;1. Отбор алмазов&lt;/b&gt;&lt;br&gt;для онлайн-продажи&lt;br&gt;в центральном офисе" vertex="1">
+          <mxGeometry height="60" width="220" x="60" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="bp2" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fillColor=#ffff99;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;" value="&lt;b&gt;2. Перевозка в лабораторию,&lt;/b&gt;&lt;br&gt;оцифровка камней&lt;br&gt;и возврат в офис" vertex="1">
+          <mxGeometry height="60" width="220" x="424" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="bp3" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fillColor=#ffff99;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;" value="&lt;b&gt;3. Публикация данных&lt;/b&gt;&lt;br&gt;для покупателей" vertex="1">
+          <mxGeometry height="60" width="220" x="758" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="bp4" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fillColor=#ffff99;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;" value="&lt;b&gt;4. Онлайн-аукцион&lt;/b&gt;&lt;br&gt;(видеоконференция)" vertex="1">
+          <mxGeometry height="60" width="220" x="1095" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="bp5" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fillColor=#ffff99;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;" value="&lt;b&gt;5. Отправка камней&lt;/b&gt;&lt;br&gt;победителям торгов&lt;br&gt;из офиса" vertex="1">
+          <mxGeometry height="60" width="220" x="1456" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="seq1" edge="1" parent="1" source="bp1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;" target="bp2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seq2" edge="1" parent="1" source="bp2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;" target="bp3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seq3" edge="1" parent="1" source="bp3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;" target="bp4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seq4" edge="1" parent="1" source="bp4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;strokeWidth=2;" target="bp5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_office" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Сотрудник&lt;br&gt;центрального офиса" vertex="1">
+          <mxGeometry height="52" width="64" x="108" y="271" as="geometry" />
+        </mxCell>
+        <mxCell id="a_carrier" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Перевозчик" vertex="1">
+          <mxGeometry height="52" width="64" x="501" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="a_lab" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Эксперт&#xa;лаборатории" vertex="1">
+          <mxGeometry height="52" width="64" x="587" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="a_buyer" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Покупатель" vertex="1">
+          <mxGeometry height="52" width="64" x="1110" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="a_accountant" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Бухгалтер" vertex="1">
+          <mxGeometry height="52" width="64" x="1540" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="s_almazy" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;ИС «Алмазы»&lt;/b&gt;&lt;br&gt;Планирование работ&lt;br&gt;Присвоение идентификаторов&lt;br&gt;Подготовка ведомостей" vertex="1">
+          <mxGeometry height="80" width="200" x="40" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="s_almazy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=1;strokeColor=light-dark(#000000, #8eb6db);strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" target="s_logistics" value="План перевозки,&amp;nbsp;&lt;div&gt;идентификаторы алмазов&lt;br&gt;(авто, существ.)&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.016" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="s_logistics" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=1;strokeColor=light-dark(#000000, #8eb6db);strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;" target="uaTOB5NpIjiOW57proe9-79" value="Акты и оплата услуг перевозчика&#xa;(авто, существ.)">
+          <mxGeometry relative="1" x="0.0211" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s_almazy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 4;endArrow=open;endFill=0;strokeColor=#8a6d00;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="uaTOB5NpIjiOW57proe9-83" value="+ Список отобранных алмазов, идентификаторы&lt;br&gt;(запись)">
+          <mxGeometry relative="1" x="-0.3294" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="s_lab" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 4;endArrow=open;endFill=0;strokeColor=#8a6d00;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="uaTOB5NpIjiOW57proe9-83" value="+  Результаты оцифровки: характеристики, фото&#xa;(запись)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="789.9969230769228" y="819" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-55" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=1;strokeColor=light-dark(#000000, #8eb6db);strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;" target="uaTOB5NpIjiOW57proe9-88" value="+  Перенос цифровых копий и характеристик камней&lt;br&gt;(вручную)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="778.0000000000005" y="1071" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="a_buyer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=0;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;labelBackgroundColor=default;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;" target="uaTOB5NpIjiOW57proe9-92" value="+  Участие в торгах, ставки&#xa;(вручную)">
+          <mxGeometry relative="1" x="0.0934" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="1072" y="297" />
+              <mxPoint x="1072" y="759" />
+              <mxPoint x="1146" y="759" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-92" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=1;strokeColor=light-dark(#000000, #8eb6db);strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;" target="s_auction" value="+  Фиксация итогов торгов сотрудником&lt;br&gt;(вручную)">
+          <mxGeometry relative="1" x="0.182" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="s_auction" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 4;endArrow=open;endFill=0;strokeColor=#8a6d00;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="uaTOB5NpIjiOW57proe9-95" value="+  Победители, суммы покупок&#xa;(запись)">
+          <mxGeometry relative="1" x="0.1758" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-95" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 4;endArrow=open;endFill=0;strokeColor=#8a6d00;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="uaTOB5NpIjiOW57proe9-73" value="+  Данные для отправки победителям&lt;br&gt;(чтение)">
+          <mxGeometry relative="1" x="-0.0019" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="529.9969230769229" y="819" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-95" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 4;endArrow=open;endFill=0;strokeColor=#8a6d00;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="s_buhg" value="+  Данные для актирования и оплаты покупок&#xa;(чтение)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1483.996923076923" y="819" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="s_lab" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=1;strokeColor=light-dark(#000000, #8eb6db);strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;" target="uaTOB5NpIjiOW57proe9-79" value="+  Данные для актирования услуг лаборатории&#xa;(вручную)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="a_office" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;" target="s_almazy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-57" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;entryX=0.75;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="s_auction">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="a_carrier" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;" target="s_logistics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="a_accountant" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;" target="s_buhg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="a_lab" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="s_lab">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="289" />
+              <mxPoint x="680" y="804" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="a_buyer" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" target="uaTOB5NpIjiOW57proe9-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1009" y="271" />
+              <mxPoint x="1009" y="942" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend_box" parent="1" style="rounded=0;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="120" width="1670" x="30" y="1053" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=12;" value="Условные обозначения" vertex="1">
+          <mxGeometry height="20" width="360" x="42" y="1057" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value="/ + новая система, функция или связь" vertex="1">
+          <mxGeometry height="22" width="320" x="74" y="1083" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value="изменяемая система или функция" vertex="1">
+          <mxGeometry height="22" width="320" x="74" y="1115" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value="выводимая (удаляемая) функция" vertex="1">
+          <mxGeometry height="22" width="320" x="74" y="1145" as="geometry" />
+        </mxCell>
+        <mxCell id="lgr1" edge="1" parent="1" style="html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=1;strokeColor=light-dark(#000000, #8eb6db);strokeWidth=2;rounded=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=10;fontColor=default;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="1094" as="sourcePoint" />
+            <mxPoint x="495" y="1094" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgr1t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value="Flow — поток (передача) чего-либо от одного элемента к другому" vertex="1">
+          <mxGeometry height="22" width="450" x="510" y="1083" as="geometry" />
+        </mxCell>
+        <mxCell id="lgr2" edge="1" parent="1" style="html=1;dashed=1;dashPattern=1 4;endArrow=open;endFill=0;strokeColor=#8a6d00;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="1116" as="sourcePoint" />
+            <mxPoint x="495" y="1116" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgr2t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value="Access — чтение/запись&amp;nbsp;" vertex="1">
+          <mxGeometry height="22" width="287" x="510" y="1105" as="geometry" />
+        </mxCell>
+        <mxCell id="lgr4" edge="1" parent="1" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="1135" as="sourcePoint" />
+            <mxPoint x="495" y="1135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgr4t" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;" value="Association — связь актора с системой" vertex="1">
+          <mxGeometry height="22" width="222" x="510" y="1124" as="geometry" />
+        </mxCell>
+        <mxCell id="lg6" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;fontSize=12;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="ИС (приложение)" vertex="1">
+          <mxGeometry height="30" width="170" x="1000" y="1081" as="geometry" />
+        </mxCell>
+        <mxCell id="lg9" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fillColor=#ffff99;strokeColor=default;fontSize=12;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;" value="Бизнес-процесс" vertex="1">
+          <mxGeometry height="30" width="170" x="1215" y="1081" as="geometry" />
+        </mxCell>
+        <mxCell id="lg10" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Бизнес-роль" vertex="1">
+          <mxGeometry height="30" width="40" x="1420" y="1081" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-31" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="60" width="220" x="1102" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="p_offline" parent="uaTOB5NpIjiOW57proe9-31" style="html=1;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fillColor=#f2f2f2;strokeColor=#b3b3b3;fontColor=#808080;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=11;fontFamily=Helvetica;" value="Офлайн-аукцион&lt;br&gt;&lt;i&gt;личный осмотр в офисе&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="-5" y="-3" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-29" parent="uaTOB5NpIjiOW57proe9-31" style="shape=cross;whiteSpace=wrap;html=1;rotation=45;fillColor=#FF3333;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="21" width="20" x="5.900000000000091" y="2.3300000000000125" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-35" parent="1" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.flag;fillColor=#3399FF;" value="" vertex="1">
+          <mxGeometry height="23" width="22" x="46" y="1114" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-38" parent="1" style="shape=cross;whiteSpace=wrap;html=1;rotation=45;fillColor=#FF3333;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="45.99568901432417" y="1145.9956890143242" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-42" parent="1" style="shape=cross;whiteSpace=wrap;html=1;rotation=0;fillColor=#00FF00;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="45.99568901432423" y="1083.9956890143242" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-55" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Сотрудник&lt;br&gt;центрального офиса" vertex="1">
+          <mxGeometry height="52" width="64" x="840" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-57" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Сотрудник&lt;br&gt;центрального офиса" vertex="1">
+          <mxGeometry height="52" width="64" x="1214" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-58" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="433" y="417" as="geometry" />
+        </mxCell>
+        <mxCell id="s_logistics" parent="uaTOB5NpIjiOW57proe9-58" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;ИС «Логистика»&lt;/b&gt;&lt;br&gt;+ Новый маршрут: офис→лаб.→офис" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-32" parent="uaTOB5NpIjiOW57proe9-58" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.flag;fillColor=#3399FF;" value="" vertex="1">
+          <mxGeometry height="15.333333333333334" width="18.333333333333336" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-62" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="1096" y="463" as="geometry" />
+        </mxCell>
+        <mxCell id="s_auction" parent="uaTOB5NpIjiOW57proe9-62" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;ИС «Аукцион»&lt;/b&gt;&lt;br&gt;Проведение аукциона&lt;br&gt;&amp;nbsp;+ Онлайн-режим: фиксация итогов торгов из видеоконференции" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-33" parent="uaTOB5NpIjiOW57proe9-62" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.flag;fillColor=#3399FF;" value="" vertex="1">
+          <mxGeometry height="23" width="22" x="13" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-63" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="431" y="764" as="geometry" />
+        </mxCell>
+        <mxCell id="s_lab" parent="uaTOB5NpIjiOW57proe9-63" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;ИС «Лаборатория»&lt;/b&gt;&lt;br&gt;Оцифровка камней&lt;br&gt;Фиксация характеристик" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-47" parent="uaTOB5NpIjiOW57proe9-63" style="shape=cross;whiteSpace=wrap;html=1;rotation=0;fillColor=#00FF00;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="17.833333333333332" width="16.666666666666668" x="8.333333333333334" y="5.333333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-65" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="1472" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="s_buhg" parent="uaTOB5NpIjiOW57proe9-65" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;ИС «Бухгалтерия»&lt;/b&gt;&lt;br&gt;Ведение контрактов&lt;br&gt;Актирование/оплата перевозчика" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-34" parent="uaTOB5NpIjiOW57proe9-65" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.flag;fillColor=#3399FF;" value="" vertex="1">
+          <mxGeometry height="23" width="22" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-72" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="1472" y="813" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-73" parent="uaTOB5NpIjiOW57proe9-72" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;ИС «Логистика»&lt;/b&gt;&lt;br&gt;Перевозка камней покупателям" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-78" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="431" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-79" parent="uaTOB5NpIjiOW57proe9-78" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;ИС «Бухгалтерия»&lt;/b&gt;&lt;br&gt;Актирование/оплата перевозчика&lt;div&gt;+ Актирование/оплата услуг лаборатории&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-82" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="107" width="217" x="425.5" y="915.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-83" parent="uaTOB5NpIjiOW57proe9-82" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;Excel-реестр «Описание алмазов»&lt;/b&gt;&lt;br&gt;Отбор алмазов для онлайн-аукциона&lt;br&gt;Характеристики оцифрованных камней" vertex="1">
+          <mxGeometry height="107" width="217" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-84" parent="uaTOB5NpIjiOW57proe9-82" style="shape=cross;whiteSpace=wrap;html=1;rotation=0;fillColor=#00FF00;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="17.833333333333332" width="16.666666666666668" x="8.333333333333334" y="7.133333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-85" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Бухгалтер" vertex="1">
+          <mxGeometry height="52" width="64" x="415" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-86" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-85" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="uaTOB5NpIjiOW57proe9-79">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="289" />
+              <mxPoint x="400" y="630" />
+            </Array>
+            <mxPoint x="530" y="368" as="sourcePoint" />
+            <mxPoint x="530" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-87" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="107" width="217" x="763.5" y="915.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-88" parent="uaTOB5NpIjiOW57proe9-87" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;Частное облако (провайдер)&lt;/b&gt;&lt;br&gt;+  Публикация цифровых копий и характеристик&lt;br&gt;+  Просмотр лотов" vertex="1">
+          <mxGeometry height="107" width="217" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-89" parent="uaTOB5NpIjiOW57proe9-87" style="shape=cross;whiteSpace=wrap;html=1;rotation=0;fillColor=#00FF00;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="17.833333333333332" width="16.666666666666668" x="8.333333333333334" y="7.133333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-91" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="1096" y="915.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-92" parent="uaTOB5NpIjiOW57proe9-91" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;Сервис видеоконференций&lt;/b&gt;&lt;br&gt;Проведение онлайн-торгов" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-93" parent="uaTOB5NpIjiOW57proe9-91" style="shape=cross;whiteSpace=wrap;html=1;rotation=0;fillColor=#00FF00;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="17.833333333333332" width="16.666666666666668" x="8.333333333333334" y="7.133333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-94" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="80" width="200" x="1472" y="651" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-95" parent="uaTOB5NpIjiOW57proe9-94" style="html=1;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fillColor=#99ffff;strokeColor=default;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=12;fontFamily=Helvetica;fontColor=default;fontStyle=0;" value="&lt;b&gt;Excel-реестр «Покупки и покупатели»&lt;/b&gt;&lt;br&gt;Учёт покупателей, ставок, победителей&lt;div&gt;Данные для отправки и оплаты&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-96" parent="uaTOB5NpIjiOW57proe9-94" style="shape=cross;whiteSpace=wrap;html=1;rotation=0;fillColor=#00FF00;size=0.15724912014753095;" value="" vertex="1">
+          <mxGeometry height="17.833333333333332" width="16.666666666666668" x="8.333333333333334" y="7.133333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-98" parent="1" style="html=1;shape=mxgraph.archimate3.application;appType=actor;archiType=actor;fillColor=#ffff99;strokeColor=default;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;align=center;fontFamily=Helvetica;fontColor=default;" value="Перевозчик" vertex="1">
+          <mxGeometry height="52" width="64" x="1619" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-99" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-98" style="html=1;endArrow=none;strokeColor=#9673a6;strokeWidth=1.5;dashed=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="uaTOB5NpIjiOW57proe9-73">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1649" y="365" as="sourcePoint" />
+            <mxPoint x="1649" y="518" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-100" edge="1" parent="1" source="uaTOB5NpIjiOW57proe9-55" style="html=1;endArrow=open;strokeColor=#8a6d00;strokeWidth=1.5;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;rounded=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=10;fontColor=default;labelBackgroundColor=#ffffff;dashPattern=1 4;endFill=0;" target="uaTOB5NpIjiOW57proe9-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="698" y="420" as="sourcePoint" />
+            <mxPoint x="678" y="935" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uaTOB5NpIjiOW57proe9-101" connectable="0" parent="uaTOB5NpIjiOW57proe9-100" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;+ Отбор нужных цифровых копий&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(чтение)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0045" y="-2" as="geometry">
+            <mxPoint x="27" y="-186" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
